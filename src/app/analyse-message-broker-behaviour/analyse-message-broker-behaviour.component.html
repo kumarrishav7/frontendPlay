@@ -1,0 +1,13 @@
+<div class="example-action-buttons">
+    <button mat-button (click)="accordion().openAll()">Expand All</button>
+    <button mat-button (click)="accordion().closeAll()">Collapse All</button>
+  </div>
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title> RabbitMQ </mat-panel-title>
+      </mat-expansion-panel-header>  
+      <app-communicate-with-rabbitmq></app-communicate-with-rabbitmq>
+    </mat-expansion-panel>
+  </mat-accordion>
+  

@@ -1,0 +1,12 @@
+div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  @media (max-width: 768px) {
+    div {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
