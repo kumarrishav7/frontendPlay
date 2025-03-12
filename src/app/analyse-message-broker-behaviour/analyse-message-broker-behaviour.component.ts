@@ -1,10 +1,10 @@
-import {Component, viewChild} from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
-import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import { CommunicateWithRabbitmqComponent } from "../communicate-with-rabbitmq/communicate-with-rabbitmq.component";
+import { Component, viewChild } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { CommunicateWithRabbitmqComponent } from '../communicate-with-rabbitmq/communicate-with-rabbitmq.component';
 
 @Component({
   selector: 'app-analyse-message-broker-behaviour',
@@ -15,10 +15,10 @@ import { CommunicateWithRabbitmqComponent } from "../communicate-with-rabbitmq/c
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    CommunicateWithRabbitmqComponent
-],
+    CommunicateWithRabbitmqComponent,
+  ],
   templateUrl: './analyse-message-broker-behaviour.component.html',
-  styleUrl: './analyse-message-broker-behaviour.component.css'
+  styleUrl: './analyse-message-broker-behaviour.component.css',
 })
 export class AnalyseMessageBrokerBehaviourComponent {
   accordion = viewChild.required(MatAccordion);
