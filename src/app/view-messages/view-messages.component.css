@@ -1,0 +1,13 @@
+.example-container {
+  height: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding-right: 10px !important;
+}

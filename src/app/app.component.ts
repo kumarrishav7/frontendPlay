@@ -5,6 +5,7 @@ import { LoadingService } from './loading.service';
 import { CommonModule } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Observable } from 'rxjs';
+import { ViewMessagesComponent } from './view-messages/view-messages.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { Observable } from 'rxjs';
     AnalyseMessageBrokerBehaviourComponent,
     CommonModule,
     MatProgressSpinnerModule,
+    ViewMessagesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

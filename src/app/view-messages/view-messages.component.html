@@ -1,0 +1,34 @@
+<mat-table [dataSource]="messages$" class="example-container mat-elevation-z8">
+  <ng-container matColumnDef="id">
+    <mat-header-cell *matHeaderCellDef> id </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.id }} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="senderId">
+    <mat-header-cell *matHeaderCellDef sticky> senderId </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.senderId }} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="receiverId">
+    <mat-header-cell *matHeaderCellDef sticky> receiverId </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.receiverId }} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="content">
+    <mat-header-cell *matHeaderCellDef sticky> content </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.content }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="timestamp">
+    <mat-header-cell *matHeaderCellDef sticky> timestamp </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.timestamp }} </mat-cell>
+  </ng-container>
+
+  <mat-header-row
+    *matHeaderRowDef="displayedColumns; sticky: true"
+  ></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
