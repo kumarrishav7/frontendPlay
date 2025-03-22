@@ -1,6 +1,6 @@
 <router-outlet />
+<app-file-upload *ngIf="false"></app-file-upload>
 <app-analyse-message-broker-behaviour></app-analyse-message-broker-behaviour>
 <div *ngIf="loading$ | async" class="spinner-overlay">
   <mat-spinner></mat-spinner>
 </div>
-<app-view-messages></app-view-messages>

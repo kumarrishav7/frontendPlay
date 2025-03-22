@@ -6,10 +6,17 @@
   <mat-expansion-panel expanded>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Decoupled Architechture with RabbitMQ and another api sharing the work,
-        table below is up to date with socket connection
+        Decoupled Architechture with RabbitMQ and other api(s) sharing the work,
+        Message table below is up to date with socket connection hub at consumer
+        apis
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-communicate-with-rabbitmq></app-communicate-with-rabbitmq>
+  </mat-expansion-panel>
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Messages </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-view-messages></app-view-messages>
   </mat-expansion-panel>
 </mat-accordion>

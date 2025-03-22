@@ -1,0 +1,4 @@
+<input type="file" (change)="uploadFile($event)" />
+<p *ngIf="fileUrl">
+  Uploaded File: <a [href]="fileUrl" target="_blank">{{ fileUrl }}</a>
+</p>

@@ -5,6 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { CommunicateWithRabbitmqComponent } from '../communicate-with-rabbitmq/communicate-with-rabbitmq.component';
+import { ViewMessagesComponent } from '../view-messages/view-messages.component';
 
 @Component({
   selector: 'app-analyse-message-broker-behaviour',
@@ -16,6 +17,7 @@ import { CommunicateWithRabbitmqComponent } from '../communicate-with-rabbitmq/c
     MatFormFieldModule,
     MatInputModule,
     CommunicateWithRabbitmqComponent,
+    ViewMessagesComponent,
   ],
   templateUrl: './analyse-message-broker-behaviour.component.html',
   styleUrl: './analyse-message-broker-behaviour.component.css',

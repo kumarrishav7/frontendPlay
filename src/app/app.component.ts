@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Observable } from 'rxjs';
 import { ViewMessagesComponent } from './view-messages/view-messages.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { ViewMessagesComponent } from './view-messages/view-messages.component';
     AnalyseMessageBrokerBehaviourComponent,
     CommonModule,
     MatProgressSpinnerModule,
-    ViewMessagesComponent,
+    // ViewMessagesComponent,
+    FileUploadComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
